@@ -1,0 +1,98 @@
+.flip-play-main {
+  background: url('https://res.cloudinary.com/dxww8lp4l/image/upload/v1709712763/flipbanner_qpa6uw.png')
+    no-repeat top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.back-rule-header-flip {
+  width: 100% !important;
+}
+.flip-middle-container {
+  background: rgba(0, 0, 0, 0.65);
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flip-title-container {
+  width: 40vw;
+}
+.flip-main-heading {
+  text-align: center;
+  font-size: 26px;
+  margin-top: 20px;
+  font-family: bree serif;
+  margin-bottom: 30px;
+}
+.score-timer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flip-cards-container {
+  width: 45vw;
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(21, 67, 21, 0.9);
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.flip-image-container {
+  background: rgba(167, 243, 208, 0.5);
+  height: 95px;
+  width: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  border-radius: 10px;
+}
+.flip-image {
+  height: 80px;
+  cursor: pointer;
+  background: rgba(167, 243, 208, 0.5);
+  width: 80px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .flip-cards-container {
+    width: 97vw;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .flip-title-container {
+    width: 80vw;
+  }
+  .flip-cards-container {
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .flip-cards-container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .flip-cards-container,
+  .flip-title-container {
+    width: 35vw;
+  }
+  .flip-play-main {
+    height: 100vh;
+  }
+}

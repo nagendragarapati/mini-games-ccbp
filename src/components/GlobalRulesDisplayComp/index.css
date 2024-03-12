@@ -1,0 +1,37 @@
+.rules-main-container {
+  display: flex;
+  justify-content: center;
+}
+.rule-text {
+  font-family: bree serif;
+  font-size: 16px;
+}
+
+.rules-set-1,
+.rules-set-2 {
+  width: 50vw;
+  line-height: 27px;
+  font-size: 15px;
+  margin-top: 0;
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .rules-set-1,
+  .rules-set-2 {
+    width: 100%;
+    line-height: 25px;
+    padding-left: 0px;
+  }
+
+  .rules-main-container {
+    display: block;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .rules-main {
+    padding: 20px;
+  }
+}

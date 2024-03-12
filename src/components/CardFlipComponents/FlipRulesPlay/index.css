@@ -1,0 +1,71 @@
+.flip-main {
+  background-color: #14332e;
+  color: #fff;
+  padding: 40px;
+}
+
+.back-btn-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.back-arrow {
+  height: 20px;
+}
+
+.back-text {
+  margin: 0;
+  margin-left: 5px;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.logo-heading {
+  font-size: 30px;
+}
+
+.flip-logo {
+  height: 230px;
+}
+
+.start {
+  background: #fff;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .rps-main {
+    padding: 30px;
+  }
+  .flip-logo {
+    width: 100%;
+  }
+  .logo-heading {
+    font-size: 18px;
+  }
+  .start-playing-container {
+    text-align: center;
+  }
+  .rules-text {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .flip-logo {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .flip-main {
+    height: 100vh;
+  }
+}

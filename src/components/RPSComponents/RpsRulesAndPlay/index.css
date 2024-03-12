@@ -1,0 +1,64 @@
+.rps-main {
+  background-color: #223a5f;
+  color: #fff;
+  padding: 40px;
+}
+
+.back-btn-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.back-arrow {
+  height: 20px;
+}
+
+.back-text {
+  margin: 0;
+  margin-left: 5px;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.logo-heading {
+  font-size: 30px;
+}
+
+.rps-logo {
+  height: 100px;
+}
+
+.start {
+  background: #fff;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: 'Bree Serif';
+}
+
+@media screen and (max-width: 768px) {
+  .rps-main {
+    padding: 30px;
+  }
+
+  .logo-heading {
+    font-size: 18px;
+  }
+  .start-playing-container {
+    text-align: center;
+  }
+  .rules-text {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .rps-main {
+    height: 100vh;
+  }
+}

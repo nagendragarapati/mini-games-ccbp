@@ -1,0 +1,46 @@
+.main-nav {
+  background-color: rgb(13 27 253 / 43%);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
+
+.text-emoji-heading {
+  margin: 0;
+  margin-left: 7px;
+  font-weight: bold;
+  color: rgba(51, 65, 85, 1);
+}
+
+.emoji-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-emoji {
+  color: rgba(51, 65, 85, 1);
+  margin: 0;
+  margin-left: 5px;
+}
+.scorevalue {
+  margin-right: 30px;
+}
+
+.emoji_logo {
+  height: 30px;
+}
+
+.scores-container {
+  display: flex;
+}
+
+.score-emoji {
+  color: black;
+}
+
+@media screen and (max-width: 767px) {
+  .main-nav {
+    padding: 10px 30px;
+  }
+}

@@ -1,0 +1,72 @@
+.play-main {
+  background-color: #223a5f;
+  color: #fff;
+  padding: 40px;
+  height: 100vh;
+}
+
+.back-rule-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  align-items: center;
+}
+
+.back-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.back-text {
+  margin: 0;
+  margin-left: 5px;
+}
+
+.rules-btn {
+  background: transparent;
+  border: 1px solid;
+  outline: none;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.middle-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.img-icons {
+  height: 100px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.paper-img {
+  margin: 0 !important;
+}
+
+@media screen and (max-width: 600px) {
+  .play-main {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  .img {
+    height: 70px;
+  }
+
+  .heading {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .back-rule-header {
+    padding: 0;
+  }
+}

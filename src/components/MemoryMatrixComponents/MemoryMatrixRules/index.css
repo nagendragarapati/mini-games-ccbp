@@ -1,0 +1,15 @@
+.memory-matrix-logo {
+  height: 200px;
+  margin-top: 100px;
+}
+.start-memory-game {
+  background-color: rgba(70, 122, 255, 1) !important;
+  font-family: 'Bree Serif';
+  color: #fff;
+}
+.rules-text {
+  font-family: 'Bree Serif';
+}
+.memory-matrix-main {
+  background-color: rgba(26, 32, 44, 1);
+}

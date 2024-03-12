@@ -1,0 +1,61 @@
+.memory-result-main {
+  background-color: rgba(26, 32, 44, 1);
+  color: #fff;
+  font-family: 'Bree Serif';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.memory-result-middle {
+  padding: 30px;
+  width: 50%;
+}
+.memory-result-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.memory-status-icon {
+  height: 30px;
+}
+.rc-progress-line {
+  height: 12px;
+  width: 100%;
+  border-radius: 400px;
+}
+.line-progress-container {
+}
+.game-levels-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.level-text {
+}
+.status-text-container {
+  text-align: center;
+  margin-top: 40px;
+}
+.congrats-text {
+  color: rgba(70, 122, 255, 1);
+  font-size: 30px;
+}
+.reached-text {
+  font-size: 24px;
+}
+.memory-play-again {
+  border: none;
+  background: rgba(70, 122, 255, 1);
+  color: #fff;
+  padding: 3px 12px 5px 12px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .memory-result-middle {
+    width: 100%;
+  }
+}

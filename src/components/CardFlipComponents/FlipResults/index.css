@@ -1,0 +1,40 @@
+.flip-result-main {
+  background-color: rgba(20, 51, 46, 1);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.flip-result-img {
+  height: 100px;
+}
+.flip-result-text {
+  font-size: 25px;
+  font-family: 'Bree Serif';
+  margin-top: 20px;
+  color: rgba(74, 222, 128, 1);
+  margin-bottom: 20px;
+}
+.no-of-flips {
+  font-family: 'Bree Serif';
+  font-size: 14px;
+  font-weight: 200;
+}
+.result-status {
+  font-size: 25px;
+  font-family: 'Bree Serif';
+  margin-bottom: 50px;
+  text-align: center;
+}
+.play-again-flip {
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+  background: #fff;
+  color: black;
+  font-family: 'Bree Serif';
+  font-weight: 200 !important;
+  border-radius: 5px;
+}

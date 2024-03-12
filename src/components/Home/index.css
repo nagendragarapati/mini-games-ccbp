@@ -1,0 +1,91 @@
+.main-container-header {
+  background-image: linear-gradient(#834d9b, #d04ed6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-container {
+  height: 150px;
+  background-color: #fff;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.emoji-logo {
+  height: 130px;
+}
+
+.matrix-logo {
+  height: 80px;
+}
+
+.rps-logo {
+  height: 90px;
+}
+
+.animalscard-logo {
+  height: 125px;
+}
+
+.text {
+  font-family: Bree Serif;
+  font-weight: 400;
+}
+
+.games-text {
+  color: #f8fafc;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.cards-container {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container-header {
+    height: 100%;
+  }
+
+  .games-text {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-container-header {
+    height: 100vh;
+  }
+
+  .games-text {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cards-container {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .cards-container {
+    width: 55%;
+  }
+}

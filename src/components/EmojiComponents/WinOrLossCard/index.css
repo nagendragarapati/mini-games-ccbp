@@ -1,0 +1,89 @@
+.emoji-result-img-sec {
+}
+
+.emoji-result-img {
+  height: 250px;
+}
+
+.emoji-result-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.result-texts-container {
+  text-align: center;
+}
+
+.emoji-loss-text {
+  font-size: 26px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: rgba(51, 65, 85, 1);
+}
+
+.emoji-score-result-text {
+  color: rgba(51, 65, 85, 1);
+  font-weight: 500;
+}
+
+.emoji-score-result {
+  color: rgba(82, 63, 255, 1);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.emoji-play-again {
+  background: rgba(255, 206, 39, 1);
+  border: none;
+  padding: 5px 20px;
+  border-radius: 15px;
+  font-weight: 500;
+}
+
+.emoji-result-middle {
+  width: 50%;
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media screen and (max-width: 575px) {
+  .emoji-result-img {
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+  .emoji-loss-text {
+    font-size: 20px;
+  }
+
+  .emoji-score-result-text {
+    font-size: 15px;
+  }
+
+  .emoji-score-result {
+    font-size: 25px;
+  }
+
+  .emoji-play-again {
+    padding: 3px 15px;
+    border-radius: 10px;
+    font-weight: 400;
+  }
+
+  .emoji-result-middle {
+    width: 100%;
+  }
+  .emoji-result-main {
+    padding: 30px;
+  }
+  .emoji-result-middle {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

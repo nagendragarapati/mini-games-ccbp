@@ -1,0 +1,15 @@
+.emoji-icon-sec {
+  background: rgba(255, 255, 255, 0.19);
+  padding: 20px;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+}
+.emoji_img {
+  height: 60px;
+}
