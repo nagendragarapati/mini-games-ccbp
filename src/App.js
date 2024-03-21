@@ -1,4 +1,4 @@
-import {Route, Routes, BrowserRouter} from 'react-router-dom'
+import {Route, Switch, BrowserRouter} from 'react-router-dom'
 import Home from './components/Home'
 import RpsRulesAndPlay from './components/RPSComponents/RpsRulesAndPlay'
 import RpsPlay from './components/RPSComponents/RPSPlay'
@@ -18,22 +18,30 @@ import './App.css'
 const App = () => (
   <>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/rock-paper-scissor" element={<RpsRulesAndPlay />} />
-        <Route path="/rps-play-game" element={<RpsPlay />} />
-        <Route path="/rps-result" element={<ResultScreen />} />
-        <Route path="/card-flip-memory-game" element={<FlipRulesAndPlay />} />
-        <Route path="/flip-result" element={<FlipResults />} />
-        <Route path="/flip-play-game" element={<FlipPlay />} />
-        <Route path="/emoji-game-home" element={<EmojiHome />} />
-        <Route path="/emoji-game" element={<EmojiRules />} />
-        <Route path="/memory-matrix" element={<MemoryMatrixRules />} />
-        <Route path="/memory-game" element={<MemoryGame />} />
-        <Route path="/memory-game-results" element={<MemoryMatrixResults />} />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/rock-paper-scissor" component={RpsRulesAndPlay} />
+        <Route exact path="/rps-play-game" component={RpsPlay} />
+        <Route exact path="/rps-result" component={ResultScreen} />
+        <Route
+          exact
+          path="/card-flip-memory-game"
+          component={FlipRulesAndPlay}
+        />
+        <Route exact path="/flip-result" component={FlipResults} />
+        <Route exact path="/flip-play-game" component={FlipPlay} />
+        <Route exact path="/emoji-game-home" component={EmojiHome} />
+        <Route exact path="/emoji-game" component={EmojiRules} />
+        <Route exact path="/memory-matrix" component={MemoryMatrixRules} />
+        <Route exact path="/memory-game" component={MemoryGame} />
+        <Route
+          exact
+          path="/memory-game-results"
+          component={MemoryMatrixResults}
+        />
 
-        <Route path="*" element={<h1>Not Found</h1>} />
-      </Routes>
+        <Route component={<h1>Not Found</h1>} />
+      </Switch>
     </BrowserRouter>
   </>
 )

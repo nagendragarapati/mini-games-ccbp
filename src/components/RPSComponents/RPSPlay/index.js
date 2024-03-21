@@ -1,5 +1,5 @@
 import {useCallback, useState} from 'react'
-import {useNavigate} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 import {useSelector, useDispatch} from 'react-redux'
 import RulesModal from '../../GlobalRulesModal'
 import {rpsActions} from '../../../store/rpsslice'
@@ -8,7 +8,7 @@ import './index.css'
 
 const RpsPlay = () => {
   const [modalShow, setModalShow] = useState(false)
-  const navigate = useNavigate()
+  const history = useHistory()
   const dispatch = useDispatch()
 
   const userChoice = useSelector(state => state.rps.userChoice)
@@ -16,7 +16,7 @@ const RpsPlay = () => {
   const getUserChoice = useCallback(
     userChoiceValue => {
       dispatch(rpsActions.setUserChoice(userChoiceValue))
-      navigate('/rps-result')
+      history.push('/rps-result')
     },
     [userChoice],
   )
@@ -32,7 +32,7 @@ const RpsPlay = () => {
           />
           <p
             className="back-text"
-            onClick={() => navigate('/rock-paper-scissor')}
+            onClick={() => history.push('/rock-paper-scissor')}
           >
             Back
           </p>

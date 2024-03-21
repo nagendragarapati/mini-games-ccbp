@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react'
 import {useSelector, useDispatch} from 'react-redux'
-import {useNavigate} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 import {rpsActions} from '../../../store/rpsslice'
 import './index.css'
 
@@ -13,7 +13,7 @@ const ResultScreen = () => {
 
   const [status, setStatus] = useState('')
   const [oppoChoice, setOppoChoice] = useState('')
-  const navigate = useNavigate()
+  const history = useHistory()
 
   const getChoiceImg = choice => {
     let ChoiceImg = ''
@@ -142,7 +142,7 @@ const ResultScreen = () => {
             <button
               type="button"
               className="play-again-btn"
-              onClick={() => navigate('/rps-play-game')}
+              onClick={() => history.push('/rps-play-game')}
             >
               Play Again
             </button>

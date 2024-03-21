@@ -1,4 +1,4 @@
-import {useNavigate} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 import React, {useEffect, useState} from 'react'
 import ReactCardFlip from 'react-card-flip'
 import {useDispatch, useSelector} from 'react-redux'
@@ -131,7 +131,7 @@ const imgsArray = [
   },
 ]
 const FlipPlay = () => {
-  const navigate = useNavigate()
+  const history = useHistory()
   const dispatch = useDispatch()
   const noOfFlips = useSelector(state => state.flipgame.noOfFlips)
   const [modalShow, setModalShow] = useState(false)
@@ -169,11 +169,11 @@ const FlipPlay = () => {
 
   if (seconds === 0 && score !== imgsArray.length / 2) {
     dispatch(flipActions.setGameStatus('Fail'))
-    navigate('/flip-result')
+    history.push('/flip-result')
     clearInterval(interval.current)
   } else if (seconds > 0 && score === imgsArray.length / 2) {
     dispatch(flipActions.setGameStatus('Success'))
-    navigate('/flip-result')
+    history.push('/flip-result')
     clearInterval(interval.current)
   }
 
@@ -223,7 +223,7 @@ const FlipPlay = () => {
             />
             <p
               className="back-text"
-              onClick={() => navigate('/card-flip-memory-game')}
+              onClick={() => history.push('/card-flip-memory-game')}
             >
               Back
             </p>

@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react'
-import {useNavigate} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 import {useDispatch, useSelector} from 'react-redux'
 import {memoryMatrixActions} from '../../../store/memorySlice'
 import {memoryRuleSet1, memoryRuleSet2} from '../../GlobalRules'
@@ -14,7 +14,7 @@ const MemoryGame = () => {
   const [clickedSuccessBoxes, setClickedBoxes] = useState([])
   const [clickedWrongBoxes, setClickedWrongBoxes] = useState([])
   const [modalShow, setModalShow] = useState(false)
-  const navigate = useNavigate()
+  const history = useHistory()
   const dispatch = useDispatch()
   const gameLevel = useSelector(state => state.memorymatrix.gameLevel)
 
@@ -130,7 +130,7 @@ const MemoryGame = () => {
         setTimeout(() => {
           setClickedBoxes([])
           setClickedWrongBoxes([])
-          navigate('/memory-game-results')
+          history.push('/memory-game-results')
         }, 1000)
       }
       setBoxArray(newBoxesArray)
@@ -159,7 +159,10 @@ const MemoryGame = () => {
             alt="arrow-leftarrowback"
             className="back-arrow"
           />
-          <p className="back-text" onClick={() => navigate('/memory-matrix')}>
+          <p
+            className="back-text"
+            onClick={() => history.push('/memory-matrix')}
+          >
             Back
           </p>
         </div>

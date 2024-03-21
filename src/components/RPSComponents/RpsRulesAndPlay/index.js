@@ -1,11 +1,11 @@
-import {useNavigate, Link} from 'react-router-dom'
+import {useHistory, Link} from 'react-router-dom'
 import {rpsRulesSet1, rpsRulesSet2} from '../../GlobalRules'
 import GlobalRulesComp from '../../GlobalRulesDisplayComp'
 
 import './index.css'
 
 const RpsRulesAndPlay = () => {
-  const navigate = useNavigate()
+  const history = useHistory()
 
   return (
     <div className="rps-main">
@@ -16,7 +16,7 @@ const RpsRulesAndPlay = () => {
             alt="arrow-leftarrowback"
             className="back-arrow"
           />
-          <p className="back-text" onClick={() => navigate('/')}>
+          <p className="back-text" onClick={() => history.push('/')}>
             Back
           </p>
         </div>

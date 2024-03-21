@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react'
-import {useNavigate} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 import NavBar from '../NavBar'
 import EmojiCard from '../EmojiCard'
 import RulesModal from '../../GlobalRulesModal'
@@ -15,7 +15,7 @@ const EmojiGame = props => {
   const [TopScore, setTopScore] = useState(0)
   const [modalShow, setModalShow] = useState(false)
 
-  const navigate = useNavigate()
+  const history = useHistory()
 
   const shuffledEmojisList = () => emojisList.sort(() => Math.random() - 0.5)
 
@@ -70,7 +70,7 @@ const EmojiGame = props => {
                   />
                   <p
                     className="back-text"
-                    onClick={() => navigate('/emoji-game')}
+                    onClick={() => history.push('/emoji-game')}
                   >
                     Back
                   </p>

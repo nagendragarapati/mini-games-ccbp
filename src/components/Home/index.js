@@ -3,7 +3,7 @@ import './index.css'
 
 const Home = () => (
   <div className="main-container-header">
-    <h1>Games</h1>
+    <h1 className="games-text">Games</h1>
     <ul className="cards-container">
       <Link to="/emoji-game" className="nav-link">
         <li className="game-container">

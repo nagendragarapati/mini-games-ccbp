@@ -1,6 +1,6 @@
 import {Line} from 'rc-progress'
 import {useSelector, useDispatch} from 'react-redux'
-import {useNavigate} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 import {memoryMatrixActions} from '../../../store/memorySlice'
 
 import './index.css'
@@ -43,7 +43,7 @@ const memoryResultIcons = [
 const gameLevels = ['Level 1', 'Level 3', 'Level 6', 'Level 10']
 
 const MemoryMatrixResults = () => {
-  const navigate = useNavigate()
+  const history = useHistory()
   const dispatch = useDispatch()
   const gameLevel = useSelector(state => state.memorymatrix.gameLevel)
 
@@ -57,7 +57,7 @@ const MemoryMatrixResults = () => {
 
   const onPlayMemoryAgain = () => {
     dispatch(memoryMatrixActions.setGameLevel(1))
-    navigate('/memory-game')
+    history.push('/memory-game')
   }
 
   return (

@@ -1,11 +1,11 @@
-import {useNavigate} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 import GlobalRulesComp from '../../GlobalRulesDisplayComp'
 import {emojiRulesSet} from '../../GlobalRules'
 
 import './index.css'
 
 const EmojiRules = () => {
-  const navigate = useNavigate()
+  const history = useHistory()
 
   return (
     <div className="emoji-rules-main">
@@ -15,7 +15,7 @@ const EmojiRules = () => {
           alt="arrow-leftarrowback"
           className="black-back-arrow"
         />
-        <p className="back-text" onClick={() => navigate('/')}>
+        <p className="back-text" onClick={() => history.push('/')}>
           Back
         </p>
       </div>
@@ -38,7 +38,7 @@ const EmojiRules = () => {
             <button
               type="button"
               className="emoji-start-play"
-              onClick={() => navigate('/emoji-game-home')}
+              onClick={() => history.push('/emoji-game-home')}
             >
               Start Playing
             </button>

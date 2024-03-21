@@ -1,12 +1,12 @@
 import {useSelector, useDispatch} from 'react-redux'
 import './index.css'
-import {useNavigate} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 import {flipActions} from '../../../store/flipSlice'
 
 const FlipResults = () => {
   const gameStatus = useSelector(state => state.flipgame.gameStatus)
   const noOfFlips = useSelector(state => state.flipgame.noOfFlips)
-  const navigate = useNavigate()
+  const history = useHistory()
   const dispatch = useDispatch()
 
   let imageUrl
@@ -32,7 +32,7 @@ const FlipResults = () => {
 
   const onFlipPlayAgain = () => {
     dispatch(flipActions.setNoOfFlips(0))
-    navigate('/flip-play-game')
+    history.push('/flip-play-game')
   }
 
   return (
